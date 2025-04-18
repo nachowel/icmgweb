@@ -1,4 +1,3 @@
-import { Metadata } from 'next';
 import NewsCard from "@/components/NewsCard";
 import ArticleCarousel from "@/components/ArticleCarousel";
 

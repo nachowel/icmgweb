@@ -73,20 +73,20 @@ export default function AboutPage() {
         <h2 className="text-3xl font-semibold text-center mb-8">Tarihçemiz</h2>
         <div className="bg-white p-8 rounded-lg shadow-md">
           <p className="text-gray-600 mb-6">
-            ICMG Bexley, 2010 yılında Londra&apos;nın Bexley bölgesinde kurulmuş, 
+            ICMG Bexley, 2010 yılında Londra'nın Bexley bölgesinde kurulmuş, 
             Türk toplumuna hizmet veren bir sivil toplum kuruluşudur.
           </p>
           <p className="text-gray-600 mb-6">
-            ICMG Bexley&apos;in temel amacı, Türk toplumunun kültürel ve sosyal 
+            ICMG Bexley'in temel amacı, Türk toplumunun kültürel ve sosyal 
             değerlerini korumak, gençlerin eğitimine destek olmak ve toplumsal 
             dayanışmayı güçlendirmektir.
           </p>
           <p className="text-gray-600 mb-6">
-            ICMG Bexley, Türk toplumunun İngiltere&apos;deki varlığını güçlendirmek 
+            ICMG Bexley, Türk toplumunun İngiltere'deki varlığını güçlendirmek 
             ve gelecek nesillere aktarmak için çalışmaktadır.
           </p>
           <p className="text-gray-600">
-            Bugün, modern tesislerimiz ve geniş hizmet yelpazemizle Bexley'deki
+            Bugün, modern tesislerimiz ve geniş hizmet yelpazemizle Bexley&apos;deki
             en önemli İslami merkezlerden biri haline gelmiş bulunmaktayız.
             Farklı kültürlerden insanları bir araya getiren, toplumsal uyumu
             destekleyen ve İslami değerleri yaşatan bir kurum olarak

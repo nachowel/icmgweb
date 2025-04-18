@@ -267,13 +267,13 @@ export default function MembershipPage() {
               <div className="space-y-4">
                 <div className="text-sm text-gray-600">
                   <p className="mb-2">
-                    Evet, Gift Aid'den yararlanmak istiyorum.
+                    Evet, Gift Aid&apos;den yararlanmak istiyorum.
                   </p>
                   <p className="mb-2">
-                    "Evet" kutusunu işaretleyerek, ICMG Bexley'in, aksini bildirene kadar yaptığım tüm nitelikli bağışların yanı sıra gelecekteki bağışlara ilişkin vergiyi geri talep etmesini kabul ediyorum.
+                    &quot;Evet&quot; kutusunu işaretleyerek, ICMG Bexley&apos;in, aksini bildirene kadar yaptığım tüm nitelikli bağışların yanı sıra gelecekteki bağışlara ilişkin vergiyi geri talep etmesini kabul ediyorum.
                   </p>
                   <p className="mb-2">
-                    O vergi yılında tüm bağışlarım üzerinden talep edilen Gift Aid tutarından daha az Gelir Vergisi ve/veya Sermaye Kazançları Vergisi ödersem herhangi bir fark ödememin istenebileceğini anlıyorum. ICMG Bexley'in verdiğim her 1 £ üzerinden 25 peni vergiyi geri alacağını anlıyorum.
+                    O vergi yılında tüm bağışlarım üzerinden talep edilen Gift Aid tutarından daha az Gelir Vergisi ve/veya Sermaye Kazançları Vergisi ödersem herhangi bir fark ödememin istenebileceğini anlıyorum. ICMG Bexley&apos;in verdiğim her 1 £ üzerinden 25 peni vergiyi geri alacağını anlıyorum.
                   </p>
                   <p className="mb-2">
                     Formda yazılan bilgilerimin beyanda zikredilen amaçlar doğrultusunda kaydedilip kullanılmasını kabul ediyorum. Veri koruma beyanını okudum ve kabul ediyorum. Verilen onay beyanları her zaman iptal edilebilir.
