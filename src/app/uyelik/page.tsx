@@ -62,8 +62,9 @@ export default function MembershipPage() {
             <h1 className="text-3xl font-bold text-green-700 mb-2">
               Üyelik Başvuru Formu / Membership Application Form
             </h1>
-            <p className="text-gray-600">
-              ICMG Bexley ailesine katılmak için lütfen formu doldurunuz.
+            <p className="text-gray-600 mb-6">
+              ICMG Bexley&apos;e üye olarak topluluğumuzun bir parçası olabilir, 
+              etkinliklerimize katılabilir ve desteklerimizden yararlanabilirsiniz.
             </p>
             <p className="text-gray-600">
               Please fill out the form to join the ICMG Bexley family.

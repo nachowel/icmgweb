@@ -1,5 +1,4 @@
-import Image from "next/image";
-import Link from "next/link";
+import { Metadata } from 'next';
 import NewsCard from "@/components/NewsCard";
 import ArticleCarousel from "@/components/ArticleCarousel";
 

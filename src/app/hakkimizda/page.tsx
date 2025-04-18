@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import { Metadata } from 'next';
 
 export default function AboutPage() {
   return (
@@ -72,11 +72,18 @@ export default function AboutPage() {
       <section>
         <h2 className="text-3xl font-semibold text-center mb-8">Tarihçemiz</h2>
         <div className="bg-white p-8 rounded-lg shadow-md">
-          <p className="text-gray-600 mb-4">
-            ICMG Bexley, 2000'li yılların başında Bexley'de yaşayan
-            Müslümanların dini ve sosyal ihtiyaçlarını karşılamak amacıyla
-            kurulmuştur. Kuruluşundan bu yana, toplumumuzun gelişimine katkıda
-            bulunmak için çeşitli projeler ve faaliyetler yürütmektedir.
+          <p className="text-gray-600 mb-6">
+            ICMG Bexley, 2010 yılında Londra&apos;nın Bexley bölgesinde kurulmuş, 
+            Türk toplumuna hizmet veren bir sivil toplum kuruluşudur.
+          </p>
+          <p className="text-gray-600 mb-6">
+            ICMG Bexley&apos;in temel amacı, Türk toplumunun kültürel ve sosyal 
+            değerlerini korumak, gençlerin eğitimine destek olmak ve toplumsal 
+            dayanışmayı güçlendirmektir.
+          </p>
+          <p className="text-gray-600 mb-6">
+            ICMG Bexley, Türk toplumunun İngiltere&apos;deki varlığını güçlendirmek 
+            ve gelecek nesillere aktarmak için çalışmaktadır.
           </p>
           <p className="text-gray-600">
             Bugün, modern tesislerimiz ve geniş hizmet yelpazemizle Bexley'deki
