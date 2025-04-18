@@ -1,5 +1,3 @@
-import { Metadata } from 'next';
-
 export default function AboutPage() {
   return (
     <div className="container mx-auto px-4 py-12">
@@ -21,7 +19,7 @@ export default function AboutPage() {
           <div>
             <h2 className="text-2xl font-semibold mb-4">Vizyonumuz</h2>
             <p className="text-gray-600">
-              Vizyonumuz, Bexley'de yaşayan Müslümanların dini, sosyal ve
+              Vizyonumuz, Bexley&apos;de yaşayan Müslümanların dini, sosyal ve
               kültürel ihtiyaçlarını karşılayan, toplumsal entegrasyonu
               destekleyen ve farklı inançlar arasında köprü kuran bir merkez
               olmaktır.
@@ -73,16 +71,16 @@ export default function AboutPage() {
         <h2 className="text-3xl font-semibold text-center mb-8">Tarihçemiz</h2>
         <div className="bg-white p-8 rounded-lg shadow-md">
           <p className="text-gray-600 mb-6">
-            ICMG Bexley, 2010 yılında Londra'nın Bexley bölgesinde kurulmuş, 
+            ICMG Bexley, 2010 yılında Londra&apos;nın Bexley bölgesinde kurulmuş, 
             Türk toplumuna hizmet veren bir sivil toplum kuruluşudur.
           </p>
           <p className="text-gray-600 mb-6">
-            ICMG Bexley'in temel amacı, Türk toplumunun kültürel ve sosyal 
+            ICMG Bexley&apos;in temel amacı, Türk toplumunun kültürel ve sosyal 
             değerlerini korumak, gençlerin eğitimine destek olmak ve toplumsal 
             dayanışmayı güçlendirmektir.
           </p>
           <p className="text-gray-600 mb-6">
-            ICMG Bexley, Türk toplumunun İngiltere'deki varlığını güçlendirmek 
+            ICMG Bexley, Türk toplumunun İngiltere&apos;deki varlığını güçlendirmek 
             ve gelecek nesillere aktarmak için çalışmaktadır.
           </p>
           <p className="text-gray-600">
