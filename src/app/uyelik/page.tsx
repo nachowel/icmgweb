@@ -13,7 +13,7 @@ export default function MembershipPage() {
     notes: '',
     membershipFee: '',
     customFee: '',
-    giftAid: 'yes', // 'yes' | 'no'
+    giftAid: 'yes',
     termsAccepted: false,
   })
 
@@ -58,18 +58,187 @@ export default function MembershipPage() {
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-2xl mx-auto">
-        <div className="bg-white p-8 rounded-lg shadow-md">
-          {/* Form başlıkları */}
-          {/* ... diğer alanlar değişmediği için çıkarıldı ... */}
+        <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-md">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Üyelik Başvurusu / Membership Application</h2>
+
+          {/* Name */}
+          <div className="mb-4">
+            <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+              Ad Soyad / Full Name *
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              value={formData.name}
+              onChange={handleChange}
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+            />
+          </div>
+
+          {/* Email */}
+          <div className="mb-4">
+            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+              E-posta / Email *
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              value={formData.email}
+              onChange={handleChange}
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+            />
+          </div>
+
+          {/* Phone */}
+          <div className="mb-4">
+            <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
+              Telefon / Phone *
+            </label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              value={formData.phone}
+              onChange={handleChange}
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+            />
+          </div>
+
+          {/* Birth Date */}
+          <div className="mb-4">
+            <label htmlFor="birthDate" className="block text-sm font-medium text-gray-700">
+              Doğum Tarihi / Date of Birth *
+            </label>
+            <input
+              type="date"
+              id="birthDate"
+              name="birthDate"
+              required
+              value={formData.birthDate}
+              onChange={handleChange}
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+            />
+          </div>
+
+          {/* Birth Place */}
+          <div className="mb-4">
+            <label htmlFor="birthPlace" className="block text-sm font-medium text-gray-700">
+              Doğum Yeri (Şehir ve Ülke) / Place of Birth (City and Country) *
+            </label>
+            <input
+              type="text"
+              id="birthPlace"
+              name="birthPlace"
+              required
+              value={formData.birthPlace}
+              onChange={handleChange}
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+            />
+          </div>
+
+          {/* Address */}
+          <div className="mb-4">
+            <label htmlFor="address" className="block text-sm font-medium text-gray-700">
+              Adres / Address *
+            </label>
+            <textarea
+              id="address"
+              name="address"
+              required
+              rows={3}
+              value={formData.address}
+              onChange={handleChange}
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+            />
+          </div>
+
+          {/* Notes */}
+          <div className="mb-4">
+            <label htmlFor="notes" className="block text-sm font-medium text-gray-700">
+              Notlar / Notes
+            </label>
+            <textarea
+              id="notes"
+              name="notes"
+              rows={3}
+              value={formData.notes}
+              onChange={handleChange}
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+            />
+          </div>
+
+          {/* Membership Fee */}
+          <div className="mb-4">
+            <label className="block text-sm font-medium text-gray-700">
+              Üyelik Ücreti / Membership Fee *
+            </label>
+            <div className="mt-2 space-y-2">
+              <div className="flex items-center">
+                <input
+                  type="radio"
+                  id="fee10"
+                  name="membershipFee"
+                  value="10"
+                  checked={formData.membershipFee === '10'}
+                  onChange={handleChange}
+                  className="h-4 w-4 text-green-600 focus:ring-green-500 border-gray-300"
+                />
+                <label htmlFor="fee10" className="ml-2 block text-sm text-gray-700">
+                  £10
+                </label>
+              </div>
+              <div className="flex items-center">
+                <input
+                  type="radio"
+                  id="fee20"
+                  name="membershipFee"
+                  value="20"
+                  checked={formData.membershipFee === '20'}
+                  onChange={handleChange}
+                  className="h-4 w-4 text-green-600 focus:ring-green-500 border-gray-300"
+                />
+                <label htmlFor="fee20" className="ml-2 block text-sm text-gray-700">
+                  £20
+                </label>
+              </div>
+              <div className="flex items-center">
+                <input
+                  type="radio"
+                  id="feeCustom"
+                  name="membershipFee"
+                  value="custom"
+                  checked={formData.membershipFee === 'custom'}
+                  onChange={handleChange}
+                  className="h-4 w-4 text-green-600 focus:ring-green-500 border-gray-300"
+                />
+                <label htmlFor="feeCustom" className="ml-2 block text-sm text-gray-700">
+                  Diğer / Other
+                </label>
+                {formData.membershipFee === 'custom' && (
+                  <input
+                    type="number"
+                    name="customFee"
+                    value={formData.customFee}
+                    onChange={handleChange}
+                    className="ml-2 block w-24 rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+                    placeholder="£"
+                  />
+                )}
+              </div>
+            </div>
+          </div>
 
           {/* Gift Aid Declaration */}
           <div className="border-t pt-6">
             <h3 className="text-lg font-medium text-gray-900 mb-4">Gift Aid Declaration</h3>
-
-            {/* Açıklamalar kısmı değişmedi */}
-            {/* ... */}
-
-            {/* Gift Aid Radyo Butonları */}
+            <p className="text-sm text-gray-600 mb-4">
+              I want to Gift Aid all of my donations to ICMG Bexley. I am a UK taxpayer and understand that if I pay less Income Tax and/or Capital Gains Tax than the amount of Gift Aid claimed on all my donations in that tax year it is my responsibility to pay any difference.
+            </p>
             <div className="flex items-center space-x-8 mt-4">
               <label className="flex items-center space-x-2">
                 <input
@@ -109,7 +278,7 @@ export default function MembershipPage() {
                 className="h-4 w-4 text-green-600 focus:ring-green-500 border-gray-300 rounded"
               />
               <label htmlFor="termsAccepted" className="ml-2 block text-sm font-medium text-gray-700">
-                Üyelik şartlarını kabul ettiğinizi belirtmek için &quot;Kabul ediyorum&quot; kutucuğunu işaretleyiniz.
+                Üyelik şartlarını kabul ettiğinizi belirtmek için "Kabul ediyorum" kutucuğunu işaretleyiniz.
               </label>
             </div>
           </div>
